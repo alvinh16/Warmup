@@ -25,3 +25,27 @@ $ git commit -a -m "<a short, descriptive message>"
 To upload to the configured gitlab / github server
 \
 $ git push -u origin master
+
+### Python library URLs
+## OS
+https://docs.python.org/3/library/os.html
+https://www.geeksforgeeks.org/os-module-python-examples/
+
+## datetime
+https://docs.python.org/3/library/datetime.html
+https://www.w3schools.com/python/python_datetime.asp
+
+## regular expression
+https://docs.python.org/3/library/re.html
+https://www.w3schools.com/python/python_regex.asp
+https://www.programiz.com/python-programming/regex
+
+## math
+https://docs.python.org/3/library/math.html
+https://www.w3schools.com/python/module_math.asp
+
+## numpy
+https://numpy.org/
+https://www.w3schools.com/python/numpy/numpy_intro.asp
+
+
