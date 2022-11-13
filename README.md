@@ -10,16 +10,16 @@ Not touched python in a long time, this is watt i'm doing to get back into tthe 
 7. python equiv of case statement
 8. sorting & searching algorithm using index sort
 
-If you have created files, take a look at the files you have changed \
-
+If you have created files, take a look at the files you have changed 
+\
 $ git status
 
-To include the files into the repo \
-
+To include the files into the repo 
+\
 $ git add -A
 
-To accept, ie commit, the changes \
-
+To accept, ie commit, the changes 
+\
 $ git commit -a -m "<a short, descriptive message>"
 
 To upload to the configured gitlab / github server
