@@ -29,6 +29,7 @@ $ git push -u origin master
 ### Python library URLs
 ## OS
 https://docs.python.org/3/library/os.html
+\
 https://www.geeksforgeeks.org/os-module-python-examples/
 
 ## datetime
@@ -45,19 +46,22 @@ https://www.freecodecamp.org/news/python-datetime-now-how-to-get-todays-date-and
 https://www.geeksforgeeks.org/python-datetime-module/
 \
 https://pynative.com/python/datetime/
-\
 
 ## regular expression
 https://docs.python.org/3/library/re.html
+\ 
 https://www.w3schools.com/python/python_regex.asp
+\
 https://www.programiz.com/python-programming/regex
 
 ## math
 https://docs.python.org/3/library/math.html
+\
 https://www.w3schools.com/python/module_math.asp
 
 ## numpy
 https://numpy.org/
+\
 https://www.w3schools.com/python/numpy/numpy_intro.asp
 
 
