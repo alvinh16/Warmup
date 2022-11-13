@@ -11,13 +11,17 @@ Not touched python in a long time, this is watt i'm doing to get back into tthe 
 8. sorting & searching algorithm using index sort
 
 If you have created files, take a look at the files you have changed
-\$ git status
+
+$ git status
 
 To include the files into the repo
-\$ git add -A
+
+$ git add -A
 
 To accept, ie commit, the changes
-\$ git commit -a -m "<a short, descriptive message>"
+
+$ git commit -a -m "<a short, descriptive message>"
 
 To upload to the configured gitlab / github server
-\$ git push -u origin master
+
+$ git push -u origin master
