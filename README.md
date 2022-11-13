@@ -23,5 +23,5 @@ To accept, ie commit, the changes
 $ git commit -a -m "<a short, descriptive message>"
 
 To upload to the configured gitlab / github server
-
+\
 $ git push -u origin master
