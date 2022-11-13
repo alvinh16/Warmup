@@ -49,7 +49,7 @@ https://pynative.com/python/datetime/
 
 ## regular expression
 https://docs.python.org/3/library/re.html
-\ 
+\
 https://www.w3schools.com/python/python_regex.asp
 \
 https://www.programiz.com/python-programming/regex
