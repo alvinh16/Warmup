@@ -33,12 +33,19 @@ https://www.geeksforgeeks.org/os-module-python-examples/
 
 ## datetime
 https://docs.python.org/3/library/datetime.html
+\
 https://www.w3schools.com/python/python_datetime.asp
+\
 https://www.programiz.com/python-programming/datetime
+\
 https://realpython.com/python-datetime/
+\
 https://www.freecodecamp.org/news/python-datetime-now-how-to-get-todays-date-and-time/
+\
 https://www.geeksforgeeks.org/python-datetime-module/
+\
 https://pynative.com/python/datetime/
+\
 
 ## regular expression
 https://docs.python.org/3/library/re.html
