@@ -6,9 +6,8 @@ Not touched python in a long time, this is watt i'm doing to get back into tthe 
 3. other libraries : datetime(), os
 4. lists
 5. subroutines
-6. stack & queue : postfix calculator 
-7. python equiv of case statement
-8. sorting & searching algorithm using index sort
+6. python equiv of case statement
+7. sorting & searching algorithm using index sort
 
 If you have created files, take a look at the files you have changed 
 \
@@ -63,5 +62,18 @@ https://www.w3schools.com/python/module_math.asp
 https://numpy.org/
 \
 https://www.w3schools.com/python/numpy/numpy_intro.asp
+
+## Case.. Otherwise
+https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/
+\
+https://stackoverflow.com/questions/11479816/what-is-the-python-equivalent-for-a-case-switch-statement
+\
+https://www.geeksforgeeks.org/switch-case-in-python-replacement/
+\
+https://flexiple.com/python/python-switch-case/
+\
+https://data-flair.training/blogs/python-switch-case/
+\
+https://learnpython.com/blog/python-match-case-statement/
 
 
