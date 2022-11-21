@@ -20,4 +20,14 @@ def GetObj():
      source_file.close()
      return(household)
 
+def DispObj(rows):
+# This procedure dumps the content of rows on the screen
+
+      i=0
+      while i < len(rows):
+           print (rows[i])
+           i += 1
+
+
 household = GetObj()
+DispObj(household)
