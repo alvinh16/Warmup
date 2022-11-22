@@ -33,19 +33,30 @@ def largest(rows, pos):
 
       biggest = pos
       for i in range(0, pos-1):
-            print("the curr position is ", str(i))
             if rows[i] > rows[biggest]:
                 biggest = i
-#       print("the biggest is ", rows[i])
+#                print ("The biggest object is now ", rows[biggest])
+      print("the biggest is ", rows[biggest])
       return (biggest)
+
+def swappos(rows, src, dest):
+# This procedure swaps the position of 2 objects
+# & returns the list with the 2 objects swapped
+       tmpobj = rows[src]
+       rows[src] = rows[dest]
+       rows[dest] = tmpobj
+#        return (rows)
 
 household = GetObj()
 DispObj(household)
-k = len(household)-1
 
 # dest_file = open("sortedlist.text","w")
 # dest_file.writelines("")
 # dest_file = open("sortedlist.text","a")
 # dest_file.close()
 
-print ("the largest object is in position ", largest(household, k))
+k = len(household)-1
+bignum = largest(household, k)
+swappos(household, k, bignum)
+
+DispObj(household)
