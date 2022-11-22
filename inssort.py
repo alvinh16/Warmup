@@ -28,6 +28,15 @@ def DispObj(rows):
            print (rows[i])
            i += 1
 
+def largest(rows, pos):
+# this procedue scans the list, rows, from position 0 to position pos,
+# returns the position of the largest object in the interval.
+
+      for i in range(0, pos):
+           print (str(i))
 
 household = GetObj()
 DispObj(household)
+
+k = len(household) - 1
+largest(household, k)
