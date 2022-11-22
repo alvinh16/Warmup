@@ -23,20 +23,29 @@ def GetObj():
 def DispObj(rows):
 # This procedure dumps the content of rows on the screen
 
-      i=0
-      while i < len(rows):
+      top = len(rows)
+      for i in range (0, top):
            print (rows[i])
-           i += 1
 
 def largest(rows, pos):
 # this procedue scans the list, rows, from position 0 to position pos,
 # returns the position of the largest object in the interval.
 
-      for i in range(0, pos):
-           print (str(i))
+      biggest = pos
+      for i in range(0, pos-1):
+            print("the curr position is ", str(i))
+            if rows[i] > rows[biggest]:
+                biggest = i
+#       print("the biggest is ", rows[i])
+      return (biggest)
 
 household = GetObj()
 DispObj(household)
+k = len(household)-1
 
-k = len(household) - 1
-largest(household, k)
+# dest_file = open("sortedlist.text","w")
+# dest_file.writelines("")
+# dest_file = open("sortedlist.text","a")
+# dest_file.close()
+
+print ("the largest object is in position ", largest(household, k))
