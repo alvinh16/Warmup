@@ -16,7 +16,6 @@ def GetObj():
      for words in Organize :
           household.append(words.rstrip("\r\n"))
           i += 1
-
      source_file.close()
      return(household)
 
@@ -47,13 +46,25 @@ def swappos(rows, src, dest):
        tmpobj = rows[src]
        rows[src] = rows[dest]
        rows[dest] = tmpobj
-#        return (rows)
+
+def outerloop(toplist):
+# this procedure executes the outer loop in searching for the largest object
+# at the end of ea iteration, the largest obj will b at the top of the list
+
+       countdown = toplist
+       while countdown > 1:
+            bignum = largest(household, countdown)
+            print("The largest number is", bignum)
+            if household[bignum] > household[countdown]:
+                swappos(household, countdown, bignum)
+            countdown -= 1
 
 household = GetObj()
-DispObj(household)
+# DispObj(household)
 
 k = len(household)-1
-bignum = largest(household, k)
-swappos(household, k, bignum)
-
+outerloop(k)
 DispObj(household)
+# bignum = largest(household, k)
+# swappos(household, k, bignum)
+
