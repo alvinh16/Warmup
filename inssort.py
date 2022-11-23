@@ -22,15 +22,17 @@ def GetObj():
 
 def DispObj(rows):
 # This procedure dumps the content of rows on the screen
-
+      # clear the file from prev write
+      dest_file = open("sortedlist.text","w")
       top = len(rows)
       for i in range (0, top):
+           dest_file.write(rows[i])
+           dest_file.write("\r\n")
            print (rows[i])
-
+      dest_file.close()
 def largest(rows, pos):
 # this procedue scans the list, rows, from position 0 to position pos,
 # returns the position of the largest object in the interval.
-
       biggest = pos
       for i in range(0, pos-1):
             if rows[i] > rows[biggest]:
@@ -49,11 +51,6 @@ def swappos(rows, src, dest):
 
 household = GetObj()
 DispObj(household)
-
-# dest_file = open("sortedlist.text","w")
-# dest_file.writelines("")
-# dest_file = open("sortedlist.text","a")
-# dest_file.close()
 
 k = len(household)-1
 bignum = largest(household, k)
