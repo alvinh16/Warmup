@@ -17,13 +17,30 @@ def GetObj():
 def DispObj(rows):
 # This procedure dumps the content of rows on the screen
       # clear the file from prev write
-#       dest_file = open("sortedlist.text","w")
       top = len(rows)
       for i in range (0, top):
- #          dest_file.write(rows[i])
- #          dest_file.write("\r\n")
            print (rows[i])
- #     dest_file.close()
 
+def finder(target, rows):
+    inlist = True
+    found = False
+    pattern = target.rstrip("\r\n")
+    bottom = 0
+    top = len(rows)-1
+    print ("searching between ", bottom, " & ", top)
+    if household[top] == pattern:
+        final = top
+    elif household[bottom] == pattern:
+        final = bottom
+    else:
+        while (not found) and inlist:
+              print ("now searching at position ", (bottom + top) // 2)
+              inlist = False
+              final = len(rows)
+              print ("The pattern is not in the list")
+
+    print ("the object is at position ", final)
 household = GetObj()
 DispObj(household)
+target = input("what is the object that u would like to know the position of? ")
+finder(target, household)
