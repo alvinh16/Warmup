@@ -28,18 +28,33 @@ def finder(target, rows):
     bottom = 0
     top = len(rows)-1
     print ("searching between ", bottom, " & ", top)
+# you might get lucky & the target object might b at the top or bottom of the list
     if household[top] == pattern:
         final = top
     elif household[bottom] == pattern:
         final = bottom
     else:
         while (not found) and inlist:
-              print ("now searching at position ", (bottom + top) // 2)
-              inlist = False
-              final = len(rows)
-              print ("The pattern is not in the list")
+              final = (bottom + top) // 2
+              if (top == bottom+1) and (household [top]  != pattern or household[bottom] != pattern):
+                  inlist = False
+                  final = len(rows)
+              elif household[final] == pattern :
+                  found = True
+              elif household[final] < pattern:
+                  bottom = final
+                  final = (bottom + top) // 2
+              elif household[final] > pattern:
+                  top = final
+                  final = (bottom + top) // 2
+              print ("the test position is currently", final)
 
-    print ("the object is at position ", final)
+    if final < len(rows):
+        print ("the object is at position ", final)
+    else:
+        print ("The pattern is not in the list")
+
+
 household = GetObj()
 DispObj(household)
 target = input("what is the object that u would like to know the position of? ")
